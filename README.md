@@ -18,16 +18,15 @@ Data ini dibuat sebagai bagian dari tugas praktikum mata kuliah **Sistem Informa
 ---
 
 ## 🧱 Struktur File
-- `jalan_kampung.geojson` → berisi data jalan dalam format GeoJSON.
-- `README.md` → berisi penjelasan tugas, struktur data, dan langkah-langkah validasi.
+{
+  "type": "FeatureCollection",
+  "features": [
+    { "type": "Feature", "properties": { ... }, "geometry": { ... } }
+  ]
+}
 
 ---
 
-## 🧭 Tentang GeoJSON
-**GeoJSON** adalah format berbasis teks (JSON) yang digunakan untuk menyimpan data geografis.  
-Setiap fitur (feature) berisi dua bagian penting:
-- **geometry** → bentuk spasial (dalam hal ini `LineString` untuk menggambar jalan).
-- **properties** → atribut atau informasi tambahan tentang jalan tersebut.
 
 Elemen	Arti
 "type": "FeatureCollection"	Menandakan kumpulan fitur geografis.
